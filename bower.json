@@ -1,5 +1,5 @@
 {
-  "name": "my project",
+  "name": "measure-frontend-skills",
   "version": "0.0.0",
   "moduleType": [
     "node"
@@ -13,5 +13,7 @@
     "test",
     "tests"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "qwest": "^4.4.5"
+  }
 }
