@@ -2,25 +2,6 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<script src='bower_components/qwest/qwest.min.js'></script>
-		<script>
-			qwest
-				.get('https://www.googleapis.com/pagespeedonline/v2/runPagespeed', {
-					url: 'https://ya.ru/',
-					strategy: 'mobile'
-				})
-				.then(function(xhr, response) {
-					var speed = response.ruleGroups.SPEED;
-					var usability = response.ruleGroups.USABILITY;
-					console.table({
-						site: response.title,
-						speed: speed.score,
-						usability: usability.score
-					});
-				})
-				.catch(function(e, xhr, response) {
-					console.error(e, xhr, response);
-				});
-		</script>
+		<script src='assets/js/app.min.js'></script>
 	</head>
 </html>
