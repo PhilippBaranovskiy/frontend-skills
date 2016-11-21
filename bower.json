@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "qwest": "^4.4.5",
-    "google-page-speed-scores": "^1.0.0"
+    "google-page-speed-scores": "^1.0.0",
+    "skeleton": "^2.0.4"
   }
 }

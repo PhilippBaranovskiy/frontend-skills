@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Quick overview of your future frontender's skills</title>
+	<meta name="description" content="This service let's you quickly overview your future frontender's skills">
+	<meta name="author" content="Philipp Baranovskiy <philipp.b@ya.ru>">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="assets/css/app.min.css">
+
+	<script async src="assets/js/app.min.js"></script>
+
+</head>
+<body>
+
+	<header class="container header">
+		<h1 class="twelve columns header_subject">Paste links and get scores:</h1>
+		<form id="links" action="/" method="get" class="eight columns offset-by-two header_form">
+			<textarea class="u-full-width header_links" placeholder="Paste here one or several links to project maden by a person you would like to test. One link per line. Example: https://facebook.com"></textarea>
+			<button class="header_form_send">Get scores</button>
+			<img class="header_form_loader" src="assets/icons/preloader_2.gif" />
+		</form>
+	</header>
+
+	<section class="container results">
+		<p class="results_scores">
+			The person's scores are
+			<span class="results_scores_text">
+				<strong id="scores">#</strong>/10
+			</span>
+		</p>
+	</section>
+
+	<footer class="container footer">Baked for you by <a href="https://about.me/philippbaranovskiy">Philipp</a> with ☮ in mind.</footer>
+
+</body>
+</html>
