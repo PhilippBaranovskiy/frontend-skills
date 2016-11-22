@@ -21,11 +21,13 @@ var APP = (function(app){
 	app.share.getShort = function(links){
 		var url = document.location.href.split('#')[0];
 		if (links !== '') {
-			url += '#urls=' + links;
+			document.location.hash = 'urls=' + links;
+			alert('Copy link from your address bar.');
+			// url += '#urls=' + links;
 		}
-		return qwest.get('http://srv40155.ht-test.ru/fs/clck-api.php', {
-			url: encodeURIComponent(url)
-		});
+		// return qwest.get('http://srv40155.ht-test.ru/fs/clck-api.php', {
+		// 	url: encodeURIComponent(url)
+		// });
 	};
 
 	app.share.displayShareLink = function(){
