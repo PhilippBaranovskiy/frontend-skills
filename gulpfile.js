@@ -11,7 +11,7 @@ gulp.task('js', function (cb) {
 				'bower_components/google-page-speed-scores/google-page-speed-scores.package.min.js',
 				'src/js/*.js'
 			]),
-			uglify(),
+			// uglify(),
 			concat('app.min.js'),
 			gulp.dest('assets/js')
 		],
