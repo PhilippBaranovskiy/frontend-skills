@@ -35,17 +35,19 @@ var APP = (function(app){
 		var links = APP.share.getLinks();
 		var formatted = APP.share.formatLinks(links);
 
-		APP.share.getShort(links)
-			.then(function(xhr, response){
-				if ( response === '' || response === 'error' ) {
-					console.error(xhr);
-				} else {
-					prompt('Use the following link to share your result:', response);
-				}
-			})
-			.catch(function(err){
-				console.error(err);
-			});
+		APP.share.getShort();
+
+		// APP.share.getShort(links)
+		// 	.then(function(xhr, response){
+		// 		if ( response === '' || response === 'error' ) {
+		// 			console.error(xhr);
+		// 		} else {
+		// 			prompt('Use the following link to share your result:', response);
+		// 		}
+		// 	})
+		// 	.catch(function(err){
+		// 		console.error(err);
+		// 	});
 	};
 
 	app.share.init = function(){
